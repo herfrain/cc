@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Calculator - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\hefeng\AppData\Local\Temp\RSPA1FC.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Calculator.pdb" /debug /machine:I386 /out:"Debug/Calculator.exe" /pdbtype:sept 
+".\Debug\_Time.obj"
+".\Debug\Area.obj"
+".\Debug\Calculator.obj"
+".\Debug\CalculatorDlg.obj"
+".\Debug\CalculatorMdb.obj"
+".\Debug\Dw_Transform.obj"
+".\Debug\History.obj"
+".\Debug\JZ_Convert.obj"
+".\Debug\Length.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Volum.obj"
+".\Debug\Weight.obj"
+".\Debug\Calculator.res"
+]
+Creating command line "link.exe @C:\Users\hefeng\AppData\Local\Temp\RSPA1FC.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+Calculator.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

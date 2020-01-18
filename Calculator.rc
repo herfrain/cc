@@ -1,0 +1,764 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Calculator.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Calculator.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\timg.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\10.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 360, 202
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Calculator"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         145,IDC_STATIC,"Static",SS_BITMAP,131,67,100,100
+    LTEXT           "Calculator 1.0 版",IDC_STATIC,58,15,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 疯狂工作室",IDC_STATIC,58,35,119,8
+    DEFPUSHBUTTON   "确定",IDOK,303,181,50,14,WS_GROUP
+    GROUPBOX        "何峰",IDC_STATIC,129,56,105,111,BS_CENTER
+    GROUPBOX        "罗梓浩",IDC_STATIC,7,56,104,111,BS_CENTER
+    CONTROL         147,IDC_STATIC,"Static",SS_BITMAP,7,7,43,43
+    GROUPBOX        "邱锦周",IDC_STATIC,249,56,104,111,BS_CENTER
+END
+
+IDD_CALCULATOR_DIALOG DIALOGEX 0, 0, 383, 297
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "科学计算器"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT1,51,65,152,52,ES_RIGHT | ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "C",IDC_Clear,129,117,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "←",IDC_delete,246,117,40,26,BS_FLAT,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "（",IDC_left,168,117,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "）",IDC_right,207,117,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "%",IDC_percent,168,143,39,26,BS_FLAT,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "单位转换",IDC_Unitconversion,286,169,54,26,0,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "arcsin",IDC_arcsin,51,143,39,26,BS_FLAT,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "开方",IDC_square1,207,143,39,26,BS_FLAT,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "乘方",IDC_Involution,129,143,39,26,BS_FLAT,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "÷",IDC_except,246,143,40,26,BS_FLAT,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "进制转换",IDC_Decimalconversion,286,195,54,26,0,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "cos",IDC_cos,90,169,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "tan",IDC_tan,90,195,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "ln",IDC_ln,90,247,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "lg",IDC_lg,51,247,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "7",IDC_seven,129,169,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "4",IDC_four,129,195,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "1",IDC_one,129,221,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "8",IDC_eight,168,169,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "5",IDC_five,168,195,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "2",IDC_two,168,221,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "0",IDC_zero,129,247,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "9",IDC_nine,207,169,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "×",IDC_multiplication,246,169,40,26,BS_FLAT,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "6",IDC_six,207,195,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "－",IDC_subtraction,246,195,40,26,BS_FLAT,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "3",IDC_three,207,221,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      ".",IDC_point,168,247,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "＋",IDC_and,246,221,40,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "=",IDC_equal,207,247,40,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "sin",IDC_sin2,90,143,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "arccos",IDC_arccos,51,169,39,26,BS_FLAT,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "arctan",IDC_arctan,51,195,39,26,BS_FLAT,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "cot",IDC_cot,90,221,39,26,BS_FLAT,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "arccot",IDC_arccot,51,221,39,26,BS_FLAT,
+                    WS_EX_DLGMODALFRAME
+    CONTROL         "角度制",IDC_Deg,"Button",BS_AUTORADIOBUTTON,286,143,54,
+                    26,WS_EX_STATICEDGE
+    CONTROL         "弧度制",IDC_Rad,"Button",BS_AUTORADIOBUTTON,286,117,54,
+                    26,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT6,207,65,133,52,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "负号",IDC_BUTTON1,246,247,40,26,BS_FLAT,
+                    WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "历史记录",IDC_History,286,221,54,26,0,WS_EX_CLIENTEDGE
+    CONTROL         147,IDC_STATIC,"Static",SS_BITMAP,7,7,43,43
+    PUSHBUTTON      "关于",IDC_About,286,247,54,26,0,WS_EX_CLIENTEDGE
+END
+
+IDD_Dw_Transform DIALOG DISCARDABLE  0, 0, 203, 240
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "单位转换"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "长度转换",IDC_DW_B_Length,67,7,70,28
+    PUSHBUTTON      "面积转换",IDC_DW_B_Area,67,55,70,28
+    PUSHBUTTON      "体积转换",IDC_DW_B_Volum,67,106,70,28
+    PUSHBUTTON      "时间转换",IDC_DW_B_Time,67,205,70,28
+    PUSHBUTTON      "重量转换",IDC_DW_B_Weight,67,157,70,28
+END
+
+IDD_JZ_Convert DIALOGEX 0, 0, 176, 210
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_MINIMIZEBOX | 
+    WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "进制转换"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,162,94
+    EDITTEXT        IDC_16,47,19,111,14,ES_UPPERCASE | ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    RTEXT           "16进制",IDC_STATIC,13,21,25,12
+    EDITTEXT        IDC_10,47,40,111,14,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_DLGMODALFRAME
+    RTEXT           "10进制",IDC_STATIC,13,42,25,12
+    EDITTEXT        IDC_8,47,60,111,14,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_DLGMODALFRAME
+    RTEXT           "8进制",IDC_STATIC,13,63,25,11
+    EDITTEXT        IDC_2,47,80,111,14,ES_AUTOHSCROLL | ES_NUMBER,
+                    WS_EX_DLGMODALFRAME
+    RTEXT           "2进制",IDC_STATIC,13,83,25,11
+    PUSHBUTTON      "0",IDC_zero,123,184,35,20,BS_FLAT
+    PUSHBUTTON      "Clear",IDC_Clear,49,104,74,20,BS_FLAT
+    PUSHBUTTON      "←",IDC_delete,123,104,35,20,BS_FLAT
+    PUSHBUTTON      "A",IDC_A,13,124,36,20,BS_FLAT
+    PUSHBUTTON      "D",IDC_D,13,184,36,20,BS_FLAT
+    PUSHBUTTON      "F",IDC_F,86,184,37,20,BS_FLAT
+    PUSHBUTTON      "7",IDC_seven,49,124,37,20,BS_FLAT
+    PUSHBUTTON      "4",IDC_four,49,144,37,20,BS_FLAT
+    PUSHBUTTON      "1",IDC_one,49,164,37,20,BS_FLAT
+    PUSHBUTTON      "8",IDC_eight,86,124,37,20,BS_FLAT
+    PUSHBUTTON      "5",IDC_five,86,144,37,20,BS_FLAT
+    PUSHBUTTON      "2",IDC_two,86,164,37,20,BS_FLAT
+    PUSHBUTTON      "9",IDC_nine,123,124,35,20,BS_FLAT
+    PUSHBUTTON      "6",IDC_six,123,144,35,20,BS_FLAT
+    PUSHBUTTON      "3",IDC_three,123,164,35,20,BS_FLAT
+    PUSHBUTTON      "B",IDC_B,13,144,36,20,BS_FLAT
+    PUSHBUTTON      "C",IDC_C,13,164,36,20,BS_FLAT
+    PUSHBUTTON      "E",IDC_E,49,184,37,20,BS_FLAT
+END
+
+IDD_Length DIALOG DISCARDABLE  0, 0, 187, 141
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "长度转换"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_L_TopEdit,101,33,66,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_L_TopCombo,27,35,48,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_L_DownCombo,27,85,48,49,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_L_DownEdit,101,83,66,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,7,176,128
+END
+
+IDD_Time DIALOG DISCARDABLE  0, 0, 187, 141
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "时间转换"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_L_TopEdit,94,33,75,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_L_TopCombo,27,35,48,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_L_DownCombo,27,85,48,49,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_L_DownEdit,94,83,75,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,7,173,127
+END
+
+IDD_Area DIALOG DISCARDABLE  0, 0, 187, 141
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "面积转换"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_L_TopEdit,103,33,68,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_L_TopCombo,18,35,66,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_L_DownCombo,18,85,66,49,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_L_DownEdit,103,83,68,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,7,176,128
+END
+
+IDD_Weight DIALOG DISCARDABLE  0, 0, 187, 141
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "重量转换"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_L_TopEdit,97,33,71,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_L_TopCombo,24,35,48,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_L_DownCombo,24,85,48,49,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_L_DownEdit,97,83,71,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,7,176,128
+END
+
+IDD_Volum DIALOG DISCARDABLE  0, 0, 190, 142
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "体积转换"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_L_TopEdit,102,33,71,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_L_TopCombo,16,35,66,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_L_DownCombo,16,85,66,49,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_L_DownEdit,102,83,71,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,7,176,128
+END
+
+IDD_History DIALOG DISCARDABLE  0, 0, 277, 197
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "历史记录"
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_LIST4,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,263,183
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Calculator Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Calculator\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2017\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Calculator.EXE\0"
+            VALUE "ProductName", "Calculator 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 353
+        VERTGUIDE, 58
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+        HORZGUIDE, 56
+        HORZGUIDE, 167
+    END
+
+    IDD_CALCULATOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 376
+        VERTGUIDE, 51
+        VERTGUIDE, 90
+        VERTGUIDE, 129
+        VERTGUIDE, 168
+        VERTGUIDE, 207
+        VERTGUIDE, 246
+        VERTGUIDE, 286
+        VERTGUIDE, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 290
+        HORZGUIDE, 65
+        HORZGUIDE, 117
+        HORZGUIDE, 143
+        HORZGUIDE, 169
+        HORZGUIDE, 195
+        HORZGUIDE, 221
+        HORZGUIDE, 247
+        HORZGUIDE, 273
+    END
+
+    IDD_Dw_Transform, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        VERTGUIDE, 67
+        VERTGUIDE, 137
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+
+    IDD_JZ_Convert, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 169
+        VERTGUIDE, 13
+        VERTGUIDE, 38
+        VERTGUIDE, 49
+        VERTGUIDE, 86
+        VERTGUIDE, 123
+        VERTGUIDE, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+        HORZGUIDE, 33
+        HORZGUIDE, 54
+        HORZGUIDE, 74
+        HORZGUIDE, 94
+        HORZGUIDE, 124
+        HORZGUIDE, 164
+        HORZGUIDE, 184
+        HORZGUIDE, 204
+    END
+
+    IDD_Length, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        VERTGUIDE, 27
+        VERTGUIDE, 101
+        VERTGUIDE, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+        HORZGUIDE, 22
+        HORZGUIDE, 47
+        HORZGUIDE, 71
+        HORZGUIDE, 97
+    END
+
+    IDD_Time, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        VERTGUIDE, 27
+        VERTGUIDE, 94
+        VERTGUIDE, 169
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+        HORZGUIDE, 47
+        HORZGUIDE, 97
+    END
+
+    IDD_Area, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        VERTGUIDE, 18
+        VERTGUIDE, 84
+        VERTGUIDE, 103
+        VERTGUIDE, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+        HORZGUIDE, 22
+        HORZGUIDE, 47
+        HORZGUIDE, 71
+        HORZGUIDE, 97
+    END
+
+    IDD_Weight, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        VERTGUIDE, 24
+        VERTGUIDE, 97
+        VERTGUIDE, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+        HORZGUIDE, 22
+        HORZGUIDE, 47
+        HORZGUIDE, 71
+        HORZGUIDE, 97
+    END
+
+    IDD_Volum, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        VERTGUIDE, 16
+        VERTGUIDE, 82
+        VERTGUIDE, 102
+        VERTGUIDE, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+        HORZGUIDE, 22
+        HORZGUIDE, 47
+        HORZGUIDE, 71
+        HORZGUIDE, 97
+    END
+
+    IDD_History, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_Length DLGINIT
+BEGIN
+    IDC_L_TopCombo, 0x403, 8, 0
+0xc9c4, 0xd7c3, 0x6e20, 0x006d, 
+    IDC_L_TopCombo, 0x403, 8, 0
+0xa2ce, 0xd7c3, 0x7520, 0x006d, 
+    IDC_L_TopCombo, 0x403, 8, 0
+0xc1ba, 0xd7c3, 0x6d20, 0x006d, 
+    IDC_L_TopCombo, 0x403, 8, 0
+0xe5c0, 0xd7c3, 0x6320, 0x006d, 
+    IDC_L_TopCombo, 0x403, 8, 0
+0xd6b7, 0xd7c3, 0x6420, 0x006d, 
+    IDC_L_TopCombo, 0x403, 5, 0
+0xd7c3, 0x6d20, "\000" 
+    IDC_L_TopCombo, 0x403, 8, 0
+0xa2d3, 0xdfb3, 0x6620, 0x0074, 
+    IDC_L_TopCombo, 0x403, 8, 0
+0xa2d3, 0xe7b4, 0x6920, 0x006e, 
+    IDC_L_TopCombo, 0x403, 9, 0
+0xc9d5, 0x7a20, 0x6168, 0x676e, "\000" 
+    IDC_L_TopCombo, 0x403, 7, 0
+0xdfb3, 0x6320, 0x6968, "\000" 
+    IDC_L_TopCombo, 0x403, 8, 0
+0xa7c7, 0xd7c3, 0x6b20, 0x006d, 
+    IDC_L_TopCombo, 0x403, 9, 0
+0xa3ba, 0xefc0, 0x6e20, 0x696d, "\000" 
+    IDC_L_TopCombo, 0x403, 8, 0
+0xa2d3, 0xefc0, 0x6d20, 0x0069, 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xc9c4, 0xd7c3, 0x6e20, 0x006d, 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xa2ce, 0xd7c3, 0x7520, 0x006d, 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xc1ba, 0xd7c3, 0x6d20, 0x006d, 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xe5c0, 0xd7c3, 0x6320, 0x006d, 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xd6b7, 0xd7c3, 0x6420, 0x006d, 
+    IDC_L_DownCombo, 0x403, 5, 0
+0xd7c3, 0x6d20, "\000" 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xa2d3, 0xdfb3, 0x6620, 0x0074, 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xa2d3, 0xe7b4, 0x6920, 0x006e, 
+    IDC_L_DownCombo, 0x403, 9, 0
+0xc9d5, 0x7a20, 0x6168, 0x676e, "\000" 
+    IDC_L_DownCombo, 0x403, 7, 0
+0xdfb3, 0x6320, 0x6968, "\000" 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xa7c7, 0xd7c3, 0x6b20, 0x006d, 
+    IDC_L_DownCombo, 0x403, 9, 0
+0xa3ba, 0xefc0, 0x6e20, 0x696d, "\000" 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xa2d3, 0xefc0, 0x6d20, 0x0069, 
+    0
+END
+
+IDD_Time DLGINIT
+BEGIN
+    IDC_L_TopCombo, 0x403, 8, 0
+0xa2ce, 0xebc3, 0x7520, 0x0073, 
+    IDC_L_TopCombo, 0x403, 8, 0
+0xc1ba, 0xebc3, 0x6d20, 0x0073, 
+    IDC_L_TopCombo, 0x403, 5, 0
+0xebc3, 0x7320, "\000" 
+    IDC_L_TopCombo, 0x403, 9, 0
+0xd6b7, 0xd3d6, 0x6d20, 0x6e69, "\000" 
+    IDC_L_TopCombo, 0x403, 7, 0
+0xa1d0, 0xb1ca, 0x6820, "\000" 
+    IDC_L_TopCombo, 0x403, 7, 0
+0xeccc, 0x6420, 0x7961, "\000" 
+    IDC_L_TopCombo, 0x403, 6, 0
+0xdcd6, 0x7720, 0x006b, 
+    IDC_L_TopCombo, 0x403, 6, 0
+0xeac4, 0x7920, 0x0072, 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xa2ce, 0xebc3, 0x7520, 0x0073, 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xc1ba, 0xebc3, 0x6d20, 0x0073, 
+    IDC_L_DownCombo, 0x403, 5, 0
+0xebc3, 0x7320, "\000" 
+    IDC_L_DownCombo, 0x403, 9, 0
+0xd6b7, 0xd3d6, 0x6d20, 0x6e69, "\000" 
+    IDC_L_DownCombo, 0x403, 7, 0
+0xa1d0, 0xb1ca, 0x6820, "\000" 
+    IDC_L_DownCombo, 0x403, 7, 0
+0xeccc, 0x6420, 0x7961, "\000" 
+    IDC_L_DownCombo, 0x403, 6, 0
+0xdcd6, 0x7720, 0x006b, 
+    IDC_L_DownCombo, 0x403, 6, 0
+0xeac4, 0x7920, 0x0072, 
+    0
+END
+
+IDD_Area DLGINIT
+BEGIN
+    IDC_L_TopCombo, 0x403, 14, 0
+0xbdc6, 0xbdb7, 0xc1ba, 0xd7c3, 0x6d20, 0x5e6d, 0x0032, 
+    IDC_L_TopCombo, 0x403, 14, 0
+0xbdc6, 0xbdb7, 0xe5c0, 0xd7c3, 0x6320, 0x5e6d, 0x0032, 
+    IDC_L_TopCombo, 0x403, 14, 0
+0xbdc6, 0xbdb7, 0xd6b7, 0xd7c3, 0x6420, 0x5e6d, 0x0032, 
+    IDC_L_TopCombo, 0x403, 11, 0
+0xbdc6, 0xbdb7, 0xd7c3, 0x6d20, 0x325e, "\000" 
+    IDC_L_TopCombo, 0x403, 14, 0
+0xbdc6, 0xbdb7, 0xa7c7, 0xd7c3, 0x6b20, 0x5e6d, 0x0032, 
+    IDC_L_TopCombo, 0x403, 8, 0
+0xabb9, 0xeac7, 0x6820, 0x0061, 
+    IDC_L_TopCombo, 0x403, 9, 0
+0xabb9, 0xb6c4, 0x6120, 0x6572, "\000" 
+    IDC_L_DownCombo, 0x403, 14, 0
+0xbdc6, 0xbdb7, 0xc1ba, 0xd7c3, 0x6d20, 0x5e6d, 0x0032, 
+    IDC_L_DownCombo, 0x403, 14, 0
+0xbdc6, 0xbdb7, 0xe5c0, 0xd7c3, 0x6320, 0x5e6d, 0x0032, 
+    IDC_L_DownCombo, 0x403, 14, 0
+0xbdc6, 0xbdb7, 0xd6b7, 0xd7c3, 0x6420, 0x5e6d, 0x0032, 
+    IDC_L_DownCombo, 0x403, 11, 0
+0xbdc6, 0xbdb7, 0xd7c3, 0x6d20, 0x325e, "\000" 
+    IDC_L_DownCombo, 0x403, 14, 0
+0xbdc6, 0xbdb7, 0xa7c7, 0xd7c3, 0x6b20, 0x5e6d, 0x0032, 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xabb9, 0xeac7, 0x6820, 0x0061, 
+    IDC_L_DownCombo, 0x403, 9, 0
+0xabb9, 0xb6c4, 0x6120, 0x6572, "\000" 
+    0
+END
+
+IDD_Weight DLGINIT
+BEGIN
+    IDC_L_TopCombo, 0x403, 8, 0
+0xa2ce, 0xcbbf, 0x7520, 0x0067, 
+    IDC_L_TopCombo, 0x403, 8, 0
+0xc1ba, 0xcbbf, 0x6d20, 0x0067, 
+    IDC_L_TopCombo, 0x403, 5, 0
+0xcbbf, 0x6720, "\000" 
+    IDC_L_TopCombo, 0x403, 8, 0
+0xa7c7, 0xcbbf, 0x6b20, 0x0067, 
+    IDC_L_TopCombo, 0x403, 5, 0
+0xd6b6, 0x7420, "\000" 
+    IDC_L_TopCombo, 0x403, 6, 0
+0xf5b0, 0x6c20, 0x0062, 
+    IDC_L_TopCombo, 0x403, 8, 0
+0xccc5, 0xbecb, 0x6f20, 0x007a, 
+    IDC_L_TopCombo, 0x403, 7, 0
+0xefbd, 0x6a20, 0x6e69, "\000" 
+    IDC_L_TopCombo, 0x403, 9, 0
+0xbdc1, 0x6c20, 0x6169, 0x676e, "\000" 
+    IDC_L_TopCombo, 0x403, 8, 0
+0xaec7, 0x7120, 0x6169, 0x006e, 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xa2ce, 0xcbbf, 0x7520, 0x0067, 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xc1ba, 0xcbbf, 0x6d20, 0x0067, 
+    IDC_L_DownCombo, 0x403, 5, 0
+0xcbbf, 0x6720, "\000" 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xa7c7, 0xcbbf, 0x6b20, 0x0067, 
+    IDC_L_DownCombo, 0x403, 5, 0
+0xd6b6, 0x7420, "\000" 
+    IDC_L_DownCombo, 0x403, 6, 0
+0xf5b0, 0x6c20, 0x0062, 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xccc5, 0xbecb, 0x6f20, 0x007a, 
+    IDC_L_DownCombo, 0x403, 7, 0
+0xefbd, 0x6a20, 0x6e69, "\000" 
+    IDC_L_DownCombo, 0x403, 9, 0
+0xbdc1, 0x6c20, 0x6169, 0x676e, "\000" 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xaec7, 0x7120, 0x6169, 0x006e, 
+    0
+END
+
+IDD_Volum DLGINIT
+BEGIN
+    IDC_L_TopCombo, 0x403, 16, 0
+0xa2c1, 0xbdb7, 0xc1ba, 0xd7c3, 0x6d20, 0x5e6d, 0x2033, 0x0030, 
+    IDC_L_TopCombo, 0x403, 16, 0
+0xa2c1, 0xbdb7, 0xe5c0, 0xd7c3, 0x6320, 0x5e6d, 0x2033, 0x0031, 
+    IDC_L_TopCombo, 0x403, 10, 0
+0xc1ba, 0xfdc9, 0x6d20, 0x206c, 0x0032, 
+    IDC_L_TopCombo, 0x403, 10, 0
+0xe5c0, 0xfdc9, 0x6320, 0x206c, 0x0035, 
+    IDC_L_TopCombo, 0x403, 10, 0
+0xd6b7, 0xfdc9, 0x6420, 0x206c, 0x0036, 
+    IDC_L_TopCombo, 0x403, 16, 0
+0xa2c1, 0xbdb7, 0xd6b7, 0xd7c3, 0x6420, 0x5e6d, 0x2033, 0x0033, 
+    IDC_L_TopCombo, 0x403, 7, 0
+0xfdc9, 0x6c20, 0x3720, "\000" 
+    IDC_L_TopCombo, 0x403, 10, 0
+0xabb9, 0xafca, 0x6820, 0x206c, 0x0038, 
+    IDC_L_TopCombo, 0x403, 13, 0
+0xa2c1, 0xbdb7, 0xd7c3, 0x6d20, 0x335e, 0x3420, "\000" 
+    IDC_L_DownCombo, 0x403, 14, 0
+0xa2c1, 0xbdb7, 0xc1ba, 0xd7c3, 0x6d20, 0x5e6d, 0x0033, 
+    IDC_L_DownCombo, 0x403, 14, 0
+0xa2c1, 0xbdb7, 0xe5c0, 0xd7c3, 0x6320, 0x5e6d, 0x0033, 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xc1ba, 0xfdc9, 0x6d20, 0x006c, 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xe5c0, 0xfdc9, 0x6320, 0x006c, 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xd6b7, 0xfdc9, 0x6420, 0x006c, 
+    IDC_L_DownCombo, 0x403, 14, 0
+0xa2c1, 0xbdb7, 0xd6b7, 0xd7c3, 0x6420, 0x5e6d, 0x0033, 
+    IDC_L_DownCombo, 0x403, 5, 0
+0xfdc9, 0x6c20, "\000" 
+    IDC_L_DownCombo, 0x403, 8, 0
+0xabb9, 0xafca, 0x6820, 0x006c, 
+    IDC_L_DownCombo, 0x403, 11, 0
+0xa2c1, 0xbdb7, 0xd7c3, 0x6d20, 0x335e, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\10.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\timg.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\44.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "res\\444.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\11.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Calculator(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Calculator.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
